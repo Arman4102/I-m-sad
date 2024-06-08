@@ -1,0 +1,90 @@
+@media only screen and (max-width: 680px) {
+  @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  audio {
+    display: none;
+  }
+
+  .background {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: fixed;
+    background: rgb(63, 161, 251);
+    background: linear-gradient(
+      142deg,
+      rgba(63, 161, 251, 1) 0%,
+      rgba(252, 70, 168, 1) 100%
+    );
+    width: 100%;
+    height: 100vh;
+    filter: blur(5px) brightness(90%) contrast(90%);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    height: fit-content;
+    width: 65%;
+    padding: 1rem;
+    border-radius: 10%;
+    background: radial-gradient(
+      circle,
+      rgb(222, 19, 222) 70%,
+      rgba(0, 0, 0, 0.3) 190%
+    );
+    box-shadow: 0 0 15px 10px rgba(246, 44, 219, 0.8);
+  }
+
+  h1 {
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgba(249,24,94,255);
+
+    }
+
+    .title {
+      color : rgba(249,24,94,255);
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+
+  .surat {
+    width: 80%;
+    height: auto;
+  }
+
+  .lyricContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    color: black;
+    margin-top: 3vh;
+    width:80%;
+    height: fit-content;
+    border: solid 2px black;
+  }
+}
