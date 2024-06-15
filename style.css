@@ -1,5 +1,5 @@
 @media only screen and (max-width: 680px) {
-  @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
 
   * {
     margin: 0;
@@ -57,17 +57,16 @@
   }
 
   h1 {
-    font-family: 'Poetsen One', sans-serif;
+    font-family: "Poetsen One", sans-serif;
     font-size: 2rem;
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 5px rgba(249,24,94,255);
+    text-shadow: 0 0 5px rgba(249, 24, 94, 255);
+  }
 
-    }
-
-    .title {
-      color : rgba(249,24,94,255);
-      text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-    }
+  .title {
+    color: rgba(249, 24, 94, 255);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
 
   .surat {
     width: 80%;
@@ -84,34 +83,40 @@
     text-align: center;
     color: black;
     margin-top: 3vh;
-    width:80%;
+    width: 80%;
     height: fit-content;
-    border: solid 2px black;
   }
 
   .fade-in {
     animation: fadeIn 0.3s forwards;
+    opacity: 0; /* Awalnya sembunyikan lirik */
+    transform: translateX(100%); /* Geser lirik ke kanan */
   }
-  
-  .fade-out {
-    animation: fadeOut 0.3s forwards;
-  }
-  
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
+      transform: translateX(100%);
     }
     100% {
       opacity: 1;
+      transform: translateX(0); /* Kembali ke posisi awal */
     }
   }
-  
+
+  .fade-out {
+    animation: fadeOut 0.3s forwards;
+    opacity: 1; /* Awalnya lirik terlihat */
+  }
+
   @keyframes fadeOut {
     0% {
       opacity: 1;
+      transform: translateX(0); /* Posisi awal */
     }
     100% {
       opacity: 0;
+      transform: translateX(-100%); /* Geser ke kiri */
     }
   }
 }
