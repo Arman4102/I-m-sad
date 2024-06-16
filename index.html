@@ -2,16 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=no"
+    />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <audio src="/assets/HAPPY BIRTHDAY INSTRUMENTAL.mp3"></audio>
-    <div class="background"></div>
-    <div class="container">
-      <h1>Pencet <br><span class="title"></span></h1>
-        <img src="/assets/pngwing.com.png" alt="surat png" class="surat" />
+    <div class="background">
+      <video
+        src="assets/vecteezy-vertical-video-glowing-orange-and-blue-rounded-neon-lines-37498526_xEwwKbwU.mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+    </div>
+    <div class="container glow">
+      <h1>Pencet <br /><span class="title"></span></h1>
+      <img src="/assets/pngwing.com.png" alt="surat png" class="surat" />
     </div>
     <div class="lyricContainer">
       <p class="lyricText"></p>
@@ -19,11 +29,10 @@
     <script src="main.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-      var typed = new Typed('.title', {
+      var typed = new Typed(".title", {
         strings: ["Gambarnya", "Lovenya", "Suratnya"],
         typeSpeed: 100,
       });
     </script>
-  
   </body>
 </html>
